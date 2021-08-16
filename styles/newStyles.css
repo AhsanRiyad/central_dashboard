@@ -25,4 +25,31 @@
 .green-bar {
   background-color: #3cb34b;
 }
+
+.blueBox {
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  width: 200px;
+  height: 80px;
+}
+
+.blueBox {
+  border-left: 4px solid #1b82ec;
+}
+
+.blueText {
+  color: #1b82ec;
+}
+
+.blueBg {
+  background-color: rgba(27, 130, 236, 0.1);
+}
+
+.headingTextColor {
+  color: #7e47a7;
+}
+
+.headingColorBG {
+  background-color: #bbaadb;
+}
 /*# sourceMappingURL=newStyles.css.map */
