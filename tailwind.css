@@ -1,0 +1,21 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    @variants responsive {
+        .w-350p {
+            flex-basis: 350px;
+        }
+
+        .w-700p {
+            flex-basis: 700px;
+        }
+    }
+
+    .max-width-800px {
+        max-width: 800px;
+    }
+}

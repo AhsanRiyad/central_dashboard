@@ -1,0 +1,17 @@
+@import './baseVariables';
+
+.filter-white{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.rightSideFirstLayerHeight{
+    height: 200px;
+}
+
+.green-menu{
+    background-color: #079b43;
+}
+
+.green-bar{
+    background-color: #3cb34b;
+}
