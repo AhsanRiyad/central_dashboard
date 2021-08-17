@@ -14,9 +14,8 @@
 </head>
 <body>
 
-    <div class="t-grid t-grid-cols-12">
-
-        <div class="t-col-span-2 t-min-h-screen">
+    <div class="t-grid t-grid-cols-12" x-data="data()">
+        <div class="t-col-span-2 t-min-h-screen" x-show="navOpen" x-transition>
 
             <div class="t-grid t-justify-center t-mt-4">
                 <img src="./assets/logo.png" />
@@ -32,11 +31,11 @@
 
         </div>
 
-        <div class="t-col-span-10 t-min-h-screen">
+        <div class="t-col-span-10 t-min-h-screen" x-bind:class=" navOpen ?  't-col-span-10' : 't-col-span-full'  "  x-transition>
 
             <div class="green-bar t-flex t-justify-between rightSideFirstLayerHeight ">
                 <div class="t-pt-8 t-pl-8">
-                    <img class="t-cursor-pointer" src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png" />
+                    <img x-on:click="()=>{ navOpen = !navOpen }" class="t-cursor-pointer" src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png" />
                 </div>
 
                 <div class="t-pr-8 t-pt-8">
@@ -268,6 +267,15 @@
         <div class="t-flex t-items-center">  <p class="text-sm"> Powered By </p>  <img class="t-h-8 t-ml-8 t-mr-8" src="./assets/four.png" /> </div>
         
     </div>
+
+    <script>
+        function data() {
+            return {
+                navOpen: true
+            }
+        }
+    </script>
+
 
 </body>
 </html>
